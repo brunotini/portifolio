@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bruno Tini | Portifólio</title>
+
+
+</head>
+
+
+<body>
+    <div class="fundo"></div>
+
+
+
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/pessoal1.png" alt="Foto de Bruno Tini" class="foto-perfil">
+        <h1>Bruno Tini</h1>
+        <p class="cabecalho-sub-titulo">Analista Junior</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Atuo na área de TI com experiência em suporte, infraestrutura e gestão de projetos, acompanhando
+                demandas, fornecedores, serviços e entregas de tecnologia.Também trabalho com suporte a ambientes
+                Windows e macOS, equipamentos, acessos, backups e ferramentas corporativas.Sou estudante de Análise e
+                Desenvolvimento de Sistemas na Faculdade de Tecnologia Impacta e venho direcionando minha carreira para
+                Infraestrutura, Segurança da Informação e Cibersegurança. Atualmente, estou aprofundando meus
+                conhecimentos em SQL, Python, AWS, lógica de programação, desenvolvimento back-end e segurança.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo"> Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="/img/projeto1.webp" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="inf-projetos">Promoção KitKat Grand Break na Fórmula 1 - Kit Kat</h3>
+                    <p class="paragrafo-projetos">Participação no desenvolvimento e execução da promoção KitKat Grand
+                        Break
+                        na Fórmula 1, atuando no suporte às soluções de tecnologia, sistemas e infraestrutura envolvidas
+                        no
+                        projeto, desde a implementação até o acompanhamento das operações.</p>
+
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="/img/projeto2.webp" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="inf-projetos">Promoção Gotinhas - Johnson's Baby</h3>
+                    <p class="paragrafo-projetos">Minha missão foi participar com os times internos da Batux e o
+                        fornecedor
+                        do sistema para garantir o controle em tempo real de um estoque com mais de 50 mil pelúcias,
+                        integrando as regras do e-commerce com a logística de 30+ pontos de troca físicos simultâneos
+                        pelo
+                        país..</p>
+
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="/img/projeto3.webp" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="inf-projetos">Promoção Fases que nutrem cada aventura - Ninho</h3>
+                    <p class="paragrafo-projetos">Atuei na estruturação técnica do projeto desde a fase de briefing,
+                        mapeando os requisitos e entregando os materiais necessários para o desenvolvimento. Minha
+                        prioridade foi liderar a homologação e os testes das regras de negócio e funcionamento do
+                        sistema,
+                        garantindo uma experiência fluida para o usuário final em conjunto com o time da Batux e o
+                        fornecedor.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="/img/projeto4.webp" alt="Projeto 4" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="inf-projetos">Promoção Ritmo que da Jogo - Nescau</h3>
+                    <p class="paragrafo-projetos">Minha missão foi garantir a qualidade do sistema desde a sua
+                        concepção.
+                        Atuei no alinhamento do briefing, na entrega de materiais para os desenvolvedores e na validação
+                        das
+                        mecânicas e funcionamento da plataforma, gerenciando o fluxo entre os times internos da Batux e
+                        o
+                        fornecedor de tecnologia. </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="/img/projeto5.webp" alt="Projeto 5" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="inf-projetos">Promoção Gole Premiado - Coca-Cola</h3>
+                    <p class="paragrafo-projetos">Promoção inovadora dispensando grandes formulários com coleta de dados
+                        de
+                        cupom fiscal utlizando machine learning para reconhecimento do produto promocionado.</p>
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+
+        <form class="formulariio-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Mensagem</button>
+        </form>
+
+
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511951185143';
+
+            const texto = `! Me chamo ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+            
+            console. log(url)
+            window.open(url, `_blank`)
+        }
+    </script>
+</body>
+</html>
