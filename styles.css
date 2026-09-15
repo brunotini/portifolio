@@ -145,6 +145,8 @@ h1 {
 .projetos-card:hover{
     border-bottom: 2px solid var(--claro);
     transform: translateY(-20px) scale(1.03);
+    will-change: transform;
+    
 
 }
 
@@ -165,7 +167,7 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     will-change: transform;
-    transform: translatezZ(0);
+    transform: translateZ(0);
     border-bottom: 1px solid var(--secundaria);    
 }
 
